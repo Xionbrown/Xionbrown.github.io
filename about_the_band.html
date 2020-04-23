@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1a001a;
+  font-family: courier;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1000px;
+  background: #1a001a;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  font-family: verdana;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1000px;
+  background-color: #003300;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link{
+	color:Yellow;
+}
+
+a:hover{
+	color:Blue;
+}
+
+a:visited{
+	color:red;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>𝓓𝓐𝓖𝓪𝓶𝓮𝓼</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <br>
+      <li><a href="#">About The Artist</a></li>
+      <br>
+      <li><a href="#">Top Albums</a></li>
+    </ul>
+    <img src="https://vignette.wikia.nocookie.net/dagames/images/9/98/344176720_Logo.png/revision/latest/scale-to-width-down/340?cb=20181228062807.jpg">   
+    <br>  
+    <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/T812A1PA3811PT17X69Y53D156604506FS9968/views/1,width=650,height=650,appearanceId=1,backgroundColor=44007a.jpg">   
+  </nav>
+  
+  <article style="color: white">
+ 	<img src="https://pm1.narvii.com/7020/04e63bde9f8fb38c2cdfe4fcef956e00c39a126dr1-360-450v2_00.jpg">
+    <p>Will Ryan is a British youtuber who's the founder of DAGames (Diamond Armada) he began his channel in 2014 starting out making a variety of content ranging from let's plays to animations, and then finally settling on music to be for the most part the main focus of his channel.</p>
+    
+    <p>In the beginning of his music career Will started off with creating video game music based on the game he's singing about, songs like "Left Behind" was inspired by the popular Five Nights at Freddy's or another fan favorite one: "United We Stand" based on the first BattleField game. As time went on Will started branching away from just making video game music and began producing original music of his own, crafting an entirely new band under the name IRIS.</p>
+    <p>Throughout the year of 2016 Will released multiple songs of his original IP: Heart Of An Artist, two years down the line Will came up an idea of using new albums as a way to a story somewhat like a book or tv series. Each new album would pick back up from the last one and continue from there.</p>
+  </article>
+  
+</section>
+
+<footer>
+  <p>Copyright &copy; Xion Brown. All Rights Reserved.</p> 
+</footer>
+
+</body>
+</html>

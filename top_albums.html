@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1a001a;
+  font-family: courier;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1050px;
+  background: #1a001a;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  font-family: verdana;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1050px;
+  background-color: #003300;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link{
+	color:Yellow;
+}
+
+a:hover{
+	color:Blue;
+}
+
+a:visited{
+	color:red;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+
+p {
+	color: yellow;
+}
+
+ol {
+	color: white;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>𝓓𝓐𝓖𝓪𝓶𝓮𝓼</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <br>
+      <li><a href="#">About The Artist</a></li>
+      <br>
+      <li><a href="#">Top Albums</a></li>
+    </ul>
+    <img src="https://vignette.wikia.nocookie.net/dagames/images/9/98/344176720_Logo.png/revision/latest/scale-to-width-down/340?cb=20181228062807.jpg">   
+    <br>  
+    <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/T812A1PA3811PT17X69Y53D156604506FS9968/views/1,width=650,height=650,appearanceId=1,backgroundColor=44007a.jpg">   
+  </nav>
+  
+  <article style="color: white">
+ 	<h1 style="font-size:50px; color:white; border:5px solid green">Top Albums</h1>
+    <table align="center">
+    
+    <tr>
+    
+    <td><img src="https://is2-ssl.mzstatic.com/image/thumb/Music18/v4/5d/d6/d2/5dd6d208-19ce-bb56-4f80-96f5e91490ff/source/1200x1200bb.jpg" height="150" width="150"/></td>
+    <td>
+    	<ol>
+        	<li>It's Time To Die</li>
+            <li>I'm The Purple Guy</li>
+            <li>Not Here All Night</li>
+            <li>Flumpty's Jam</li>
+            <li>Another Date</li>
+            <li>Break My Mind</li>
+            <li>Game Over</li>
+            <li>March Onward To Your Nightmare</li>
+            <li>Dear Brother ft. Dawko</li>
+            <li>Follow, Greet, Wait, Repeat</li>
+            <li>The Path of Genocide</li>
+            <li>Until Dawn</li>
+            <li>Atomic Renegade</li>
+            <li>I Stay Determined</li>
+    	</ol>
+    </td>
+    
+    </tr>
+    
+    <tr>
+    <td><img src="https://vignette.wikia.nocookie.net/dagames/images/6/68/DAGamesOfficial-996879365844754432-20180516_232536-img1.jpg/revision/latest?cb=20180522022912" height="150" width="150"></td>
+    
+    <td>
+    	<ol>
+        	<li>Descend Into the Iris</li>
+            <li>S.O.S</li>
+            <li>Draw the Line</li>
+            <li>As The Lights Go Out</li>
+            <li>Kings &amp; Queens</li>
+            <li>Why Do We Hold</li>
+            <li>Lost Now Found</li>
+            <li>Too Dangerous</li>
+            <li>Castle That Never Dies</li>
+            <li>You're Just Making Us Stronger</li>
+            <li>Heart of an Artist</li>
+            <li>Ascend From the Iris</li>
+    	</ol>
+    </td>
+    </tr>
+    
+    <tr>
+    <td><img src="https://vignette.wikia.nocookie.net/dagames/images/0/08/Goliath%27s_Throne_Cover.jpg/revision/latest?cb=20190805051122" height="150" width="150"></td>
+    
+    <td>
+    	<ol>
+        	<li>Havok Be Thy Game</li>
+            <li>Hibernation</li>
+            <li>I Am The Animal</li>
+            <li>Corporate Pain</li>
+            <li>Cold Man</li>
+            <li>Surveillance</li>
+            <li>Trojan</li>
+            <li>Bloody Ether</li>
+            <li>You’re Better Off</li>
+            <li>Override &amp; Conquer</li>
+            <li>Omen Child</li>
+            <li>Testify The Modern Eye</li>
+            <li>Goliath’s Throne</li>
+            <li>Going Away</li>
+    	</ol>
+    </td>
+    </tr>
+    
+    </table>
+  </article>
+  
+</section>
+
+<footer>
+  <p>Copyright &copy; Xion Brown. All Rights Reserved.</p> 
+</footer>
+
+</body>
+</html>
